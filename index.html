@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pl_PL">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weekly WebDevChallenge 1</title>
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet">
+  </head>
+  <body>
+  	<header class="header-container">
+  		<img class="header-container__img" src="img/logo.png" alt="Company logo">
+  		<img class="header-container__img--brand" src="img/brand_name.png" alt="Company brand name">
+  	</header>
+  	<section class="main-container">
+ <!-- REGISTER FORM -->
+ 		<div class="form-template">
+ 			<h1 class="form-template__label">Register Form</h1>
+ 			<div class="form-template__wrapper">
+ 				<form class="form-template__main">
+ 				<div class="form-template__element">
+ 					<div class="form-template__icon"><i class="fa fa-user" aria-hidden="true"></i></div>
+ 					<div class="separator"></div>
+ 					<input class="form-template__field type="text" name="username" placeholder="Username" required>
+ 				</div>
+ 				<div class="form-template__element">
+ 					<div class="form-template__icon"><i class="fa fa-lock" aria-hidden="true"></i></div>
+ 					<div class="separator"></div>
+ 					<input class="form-template__field type="password" name="password" placeholder="Password" required>
+ 				</div>	
+ 				<div class="form-template__element">
+ 					<div class="form-template__icon"><i class="fa fa-lock" aria-hidden="true"></i></div>
+ 					<div class="separator"></div>
+ 					<input class="form-template__field type="password" name="confirm-password" placeholder="Confirm Password" required>
+ 				</div>
+ 				<div class="form-template__element">
+ 					<div class="form-template__icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+ 					<div class="separator"></div>
+ 					<input class="form-template__field" type="email" name="email" placeholder="Email" required>
+ 				</div>
+  				<div class="form-template__element">
+ 					<div class="form-template__icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+ 					<div class="separator"></div>
+ 					<select class="form-template__field" name="location" required>
+ 						<option value="" disabled selected>Your Location</option>
+ 						<option value="gdansk">Gdańsk</option>
+ 						<option value="krakow">Kraków</option>
+ 						<option value="poznan">Poznań</option>
+ 						<option value="warszawa">Warszawa</option>
+ 						<option value="wroclaw">Wrocław</option>
+ 					</select>
+ 				</div>
+ 				<div class="form-template__element form-template__element--check">
+	 				<label class="form-template__agreement">I have read and accept the terms of use.
+					  <input type="checkbox" class="form-template__checkbox" required>
+					  <span class="form-template__checkmark"></span>
+					</label>
+ 				</div>
+ 				<input class="form-template__button" type="submit" value="Sign up">
+ 				</form>						
+ 			</div>
+ 		</div>
+ <!-- SEND EMAIL FORM -->
+ 		<div class="form-template">
+ 			<h1 class="form-template__label">Send Email</h1>
+ 			<div class="form-template__wrapper">
+ 				<form class="form-template__main">
+ 				<div class="form-template__element">
+ 					<div class="form-template__icon"><i class="fa fa-user" aria-hidden="true"></i></div>
+ 					<div class="separator"></div>
+ 					<input class="form-template__field type="text" name="username" placeholder="Your Name" required>
+ 				</div>
+ 				<div class="form-template__element">
+ 					<div class="form-template__icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+ 					<div class="separator"></div>
+ 					<input class="form-template__field" type="email" name="email" placeholder="Your Email" required>
+ 				</div>
+
+ 				<textarea class="form-template__textarea" name="message" cols="20" rows="8" placeholder="Type your message..." required></textarea>
+
+ 				<div class="form-template__element form-template__element--check">
+	 				<label class="form-template__agreement">Send a copy to my e-mail.
+					  <input type="checkbox" class="form-template__checkbox">
+					  <span class="form-template__checkmark"></span>
+					</label>
+ 				</div>
+ 				<input class="form-template__button" type="submit" value="Send email">	
+ 				</form>					
+ 			</div>
+ 		</div>
+ <!-- SIGN IN FORM -->
+ 		<div class="form-template">
+ 			<h1 class="form-template__label">Sign In Form</h1>
+ 			<div class="form-template__wrapper">
+ 				<form class="form-template__main">
+ 				<div class="form-template__element">
+ 					<div class="form-template__icon"><i class="fa fa-user" aria-hidden="true"></i></div>
+ 					<div class="separator"></div>
+ 					<input class="form-template__field type="text" name="username" placeholder="Username" required>
+ 				</div>
+ 				<div class="form-template__element">
+ 					<div class="form-template__icon"><i class="fa fa-lock" aria-hidden="true"></i></div>
+ 					<div class="separator"></div>
+ 					<input class="form-template__field type="password" name="password" placeholder="Password" required>
+ 				</div>
+ 				<div class="form-template__doublebttn">
+		 				<div class="form-template__element form-template__element--check">
+			 				<label class="form-template__agreement">Remember me.
+							  <input type="checkbox" class="form-template__checkbox">
+							  <span class="form-template__checkmark"></span>
+							</label>
+		 				</div>
+		 				<input class="form-template__button form-template__button--small" type="submit" value="Sign in">
+		 		</div>
+ 				</form>						
+ 			</div>
+ 		</div>
+ <!-- RECOVER FORM -->
+ 		<div class="form-template">
+ 			<h1 class="form-template__label">Recover Form</h1>
+ 			<div class="form-template__wrapper">
+ 				<form class="form-template__main">
+ 				<div class="form-template__element">
+ 					<div class="form-template__icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+ 					<div class="separator"></div>
+ 					<input class="form-template__field" type="email" name="email" placeholder="Enter your Email" required>
+ 				</div>
+ 				<div class="form-template__element">
+ 					<div class="form-template__icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+ 					<div class="separator"></div>
+ 					<input class="form-template__field type="number" name="phone-number" placeholder="Enter your Phone number" required pattern="[0-9]{9}">
+ 				</div>
+ 				<div class="form-template__doublebttn">
+ 					<input class="form-template__button form-template__button--small" type="submit" value="Sign In">
+ 					<input class="form-template__button form-template__button--small form-template__button--disabled" type="submit" value="Done"> 						
+ 				</div>	
+
+ 				</form>					
+ 			</div>
+ 		</div>
+ <!-- SUBSCRIBE FORM -->
+ 		<div class="form-template">
+ 			<h1 class="form-template__label">Subscribe Form</h1>
+ 			<div class="form-template__wrapper">
+ 				<form class="form-template__main">
+ 				<div class="form-template__element">
+ 					<div class="form-template__icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+ 					<div class="separator"></div>
+ 					<input class="form-template__field" type="email" name="email" placeholder="Enter your Email" required>
+ 				</div>
+ 				<div class="form-template__doublebttn">
+ 					<input class="form-template__button form-template__button--small" type="submit" value="Subscribe">
+ 					<input class="form-template__button form-template__button--small form-template__button--negative" type="submit" value="No, Thanks">
+ 				</div>
+ 				</form>					
+ 			</div>
+ 		</div>
+	  	<div class=footer-container>
+	  		<div class="footer-container__img"><img src="img/2-layers.png" alt="Company logo"></div>
+	  		<div class="footer-container__img"><img src="img/website.png" alt="Company website address"></div>
+	  	</div>
+  	</section>
+  	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  </body>
+ </html>
