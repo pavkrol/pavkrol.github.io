@@ -103,6 +103,7 @@ html {
 	font-size: 1rem;
 	color: #afafaf;
 	padding-left: 5%;
+	-webkit-appearance: none;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
